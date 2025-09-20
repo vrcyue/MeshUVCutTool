@@ -1,0 +1,16 @@
+{
+  "name" : "jp.vrc-yue.meshuvcuttool",
+  "displayName" : "ちゅんちゅんメッシュカッター(MeshUVCutTool)",
+  "version" : "0.0.1",
+  "unity" : "2022.3",
+  "description" : "Tools for cutting meshes and editing UVs",
+  "author": {
+    "name": "vrc-yue",
+    "email": "iamyuenao@gmail.com"
+  },
+  "vpmDependencies" : {
+    "nadena.dev.ndmf": ">=1.9.0 < 2.0.0",
+    "nadena.dev.modular-avatar": ">=1.14.0 < 2.0.0"
+  },
+  "url" : "https://github.com/vrcyue/MeshUVCutTool"
+}

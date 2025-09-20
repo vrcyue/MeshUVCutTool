@@ -1,0 +1,32 @@
+{
+    "name": "jp.vrc-yue.meshuvcuttool.avatarmodifytool.editor",
+    "rootNamespace": "vrc_yue.MeshUVCutTools",
+    "references": [
+        "jp.vrc-yue.meshuvcuttool.meshmodifytool.runtime",
+        "nadena.dev.modular-avatar.core",
+        "VRC.SDK3A",
+        "VRC.SDKBase",
+        "nadena.dev.ndmf",
+        "nadena.dev.ndmf.vrchat",
+        "nadena.dev.ndmf.runtime",
+        "VRC.SDK3A.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "VRCSDKBase.dll",
+        "VRCSDKBase-Editor.dll",
+        "VRCSDK3A.dll",
+        "VRCSDK3A-Editor.dll",
+        "VRCCore-Editor.dll",
+        "System.Collections.Immutable.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
