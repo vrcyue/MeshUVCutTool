@@ -102,7 +102,7 @@ namespace vrc_yue.MeshUVCutTools.MeshModifyTool.Core
             selectionHandler.ResetSelection();
             
             // レンダラーの取得
-            rends = avatar.transform.GetComponentsInChildren<Renderer>()
+            rends = avatar.transform.GetComponentsInChildren<Renderer>(true)
                 .Where(r => r.GetMesh() != null).ToArray();
             defaultMeshs = rends.Select(m => m.GetMesh()).ToArray();
             meshsCreaters = rends.Select(m => new MeshCreater(m, avatar.transform)).ToArray();

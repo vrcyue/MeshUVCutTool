@@ -24,7 +24,7 @@ namespace vrc_yue.MeshUVCutTools.MeshModifyTool
                 .BeforePlugin("nadena.dev.modular-avatar")
                 .Run("Convert to MA MeshCutter", ctx =>
                 {
-                    var removalDataComponents = ctx.AvatarRootObject.GetComponentsInChildren<MUCTMeshRemovalData>();
+                    var removalDataComponents = ctx.AvatarRootObject.GetComponentsInChildren<MUCTMeshRemovalData>(true);
                     
                     foreach (var removalData in removalDataComponents)
                     {
@@ -40,7 +40,7 @@ namespace vrc_yue.MeshUVCutTools.MeshModifyTool
                 .Run("Apply Mesh Removal", ctx =>
                 {
                     // すべてのMUCTMeshRemovalDataコンポーネントを収集（メッシュオブジェクトに直接アタッチされている）
-                    var removalDataComponents = ctx.AvatarRootObject.GetComponentsInChildren<MUCTMeshRemovalData>();
+                    var removalDataComponents = ctx.AvatarRootObject.GetComponentsInChildren<MUCTMeshRemovalData>(true);
                     
                     // レンダラーごとに全ての削除頂点を集計
                     var verticesByRenderer = new Dictionary<Renderer, HashSet<int>>();
